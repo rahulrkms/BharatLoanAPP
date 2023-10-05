@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".activity.AllDetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/mainColor2">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:fontFamily="sans-serif-black"
+            android:text="BharatLoan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:drawableEnd="@drawable/baseline_person_pin_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/message_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="Name :"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/name_on_all_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="Shubham Gupta"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4A4747"
+            android:elevation="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/invite_frnd"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="Email :"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/email_on_all_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="abc@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4A4747"
+            android:elevation="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/invite_frnd"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="Mobile :"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/mobile_on_all_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="7756890287"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4A4747"
+            android:elevation="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/invite_frnd"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="Aadhar :"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/aadhar_on_all_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="996087909090"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4A4747"
+            android:elevation="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/invite_frnd"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="PAN :"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/pan_on_all_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="EBJJK0895E"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4A4747"
+            android:elevation="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/invite_frnd"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="DOB :"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/dob_on_all_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="Shubham Gupta"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4A4747"
+            android:elevation="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/invite_frnd"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="A/C no :"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/account_no_on_all_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="350987930292"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4A4747"
+            android:elevation="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/invite_frnd"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="IFSC :"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/ifsc_no_on_all_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="PUNB4609866"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4A4747"
+            android:elevation="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/invite_frnd"
+            />
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="Bank :"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/bank_name_on_all_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="5dp"
+                android:text="Punjab national bank"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4A4747"
+            android:elevation="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/invite_frnd"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

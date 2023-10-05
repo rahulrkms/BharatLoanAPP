@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    tools:context=".activity.SelectAmount">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/mainColor2">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:fontFamily="sans-serif-black"
+            android:text="BharatLoan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:drawableEnd="@drawable/baseline_person_pin_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/titillium_web"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:text="PleaseSelect your amount and tenure as per your requirements."
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/titillium_web"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:text="Select Amount"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/selected_amount_on_progress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:fontFamily="@font/titillium_web"
+        android:text="50000"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar"-->
+<!--        style="?android:attr/progressBarStyleHorizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@id/seekBar"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_marginBottom="21dp" />-->
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:progressTint="#FFC107"
+        android:progress="1"
+        android:thumb="@drawable/baseline_radio_button_checked_24"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/titillium_web"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:text="Select Tenure"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/select"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+
+
+        >
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_text"
+            android:inputType="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/submit_button_on_select_amount"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/back_google_signin_button"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="45dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
